@@ -1,0 +1,37 @@
+.detailer {
+    border: solid 4px rgb(0, 0, 0);
+    text-size-adjust: 2rem;
+}
+
+.transactions {
+    border: solid 4px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-1 {
+    border: solid 2px red;
+}
+
+.category-2 {
+    border: solid 2px blue;
+}
+
+.category-3 {
+    border: solid 2px greenyellow;
+}
+
+.nav-bar {
+    border: solid 4px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+   bottom: 10px;
+   width: 97%
+}
