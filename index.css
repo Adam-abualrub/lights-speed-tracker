@@ -1,5 +1,4 @@
 .detailer {
-    border: solid 4px rgb(0, 0, 0);
     text-size-adjust: 2rem;
 }
 
@@ -15,23 +14,49 @@
     justify-content: space-between;
 }
 
-.category-1 {
-    border: solid 2px red;
-}
-
-.category-2 {
-    border: solid 2px blue;
-}
-
-.category-3 {
-    border: solid 2px greenyellow;
-}
 
 .nav-bar {
     border: solid 4px rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     position: absolute;
-   bottom: 10px;
-   width: 97%
+    bottom: 10px;
+    width: 97%
+}
+
+.centertext {
+    text-align: center;
+}
+
+.editbudget {
+    display: flex;
+    font-size: large;
+    font-weight: bolder;
+    margin: 1rem;
+    place-self: center;
+}
+
+.spending-categories {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.budgetpage {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.category-box {
+    border: 2px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.budget-box {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 }
