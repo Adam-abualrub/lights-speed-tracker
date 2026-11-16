@@ -9,28 +9,20 @@
 }
 
 .categories {
-
     display: flex;
     justify-content: space-between;
 }
 
 
 .nav-bar {
-    border: solid 4px rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 10px;
-    width: 97%
-}
-
-.nav-bar-1 {
-    border: solid 4px rgb(0, 0, 0);
+    border-top: solid 4px rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     position: absolute;
     bottom: 0px;
-    width: 100%
+    left: 0px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .centertext {
