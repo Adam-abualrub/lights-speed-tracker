@@ -1,0 +1,40 @@
+<!-- your task:
+Create a new page to edit the budget
+flow:
+start the budget page
+click the edit budget
+go to the  budget-edit  page (new html)
+in the  budget-edit  there's 3 fields
+weekly/monthly pay schedule
+insert the actual budget (lets say $2000)
+save budget
+update to the budget should appear in the  budget  page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+     <div class="container-1">
+        <form class="type-of-category" action="/action_page.php">
+            <label for="category"> pay schedule:</label>
+            <select name="category" id="category">
+                <option value="daily">daily</option>
+                <option value="weekly">weekly</option>
+                <option value="monthly">monthly</option>
+            </select>
+            <label for="fname">insert actual budget::</label>
+            <input type="text" id="fname" name="fname">
+            <button type="submit">submit your budget</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
