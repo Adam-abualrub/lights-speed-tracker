@@ -7,7 +7,8 @@
     <p class="remaining-subtitle">This week · ends in 4 days</p>
 
     <section class="remaining-box">
-      <h2 class="remaining-amount">Rp 325.000</h2>
+      <!-- example of tailwind -->
+      <h2 class="text-3xl">Rp 325.000</h2> 
       <p class="remaining-detail">of Rp 500.000 · 3 spent</p>
     </section>
 
