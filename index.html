@@ -4,36 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lights Speed Tracker — Home</title>
   <link rel="stylesheet" href="index.css">
-
 </head>
 
 <body>
-  <h1>Goodmorning Mr Rifky</h1>
-  <div class="transactions">
-    <h2>Add new transactions</h2>
-  </div>
-  <div class="detailer">
-    <h3>Bank</h3>
-    <h3>0$</h3>
-    <h3>0 transactions</h3>
-  </div>
-  <h2>place-holder</h2>
-  <div class="categories">
-    <p class="category-1">title of the transaction</p>
-    <p class="category-2">category of transaction</p>
-    <p class="category-3">Amount of money</p>
-  </div>
-  <div class="nav-bar">
-    <p>Homepage</p>
-    <p>budget</p>
-    <p>transactions</p>
-  </div>
+  <main class="homepage">
+    <h1 class="remaining-title">Remaining</h1>
+    <p class="remaining-subtitle">This week · ends in 4 days</p>
+
+    <section class="remaining-box">
+      <h2 class="remaining-amount">Rp 325.000</h2>
+      <p class="remaining-detail">of Rp 500.000 · 3 spent</p>
+    </section>
+
+    <h2 class="section-label">QUICK LOG</h2>
+
+    <section class="quick-log-box">
+      <input class="title-input" type="text" placeholder="Title · e.g. Nasi goreng">
+      <div class="quick-log-categories">
+        <button class="category-pill active" type="button">Food</button>
+        <button class="category-pill" type="button">Housing</button>
+        <button class="category-pill" type="button">Health</button>
+      </div>
+      <div class="quick-log-row">
+        <input class="amount-input" type="text" placeholder="25.000">
+        <button class="save-button" type="button">Save</button>
+      </div>
+    </section>
+
+    <h2 class="section-label">RECENT</h2>
+
+    <section class="recent-list">
+      <div class="recent-item">
+        <p>Nasi goreng · Food</p>
+        <span>25.000</span>
+      </div>
+      <div class="recent-item">
+        <p>Bus fare · Transport</p>
+        <span>15.000</span>
+      </div>
+    </section>
+  </main>
+
   <script type="module" src="/src/main.js"></script>
 
 </body>
 
 </html>
-
-<!DOCTYPE html>
