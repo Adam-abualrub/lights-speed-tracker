@@ -2,163 +2,70 @@
 </script>
 
 <template>
-  <main class="homepage">
-    <h1 class="remaining-title">Remaining</h1>
-    <p class="remaining-subtitle">This week · ends in 4 days</p>
+  <main class="flex flex-col gap-4 bg-gray-100 text-black max-w-[420px] mx-auto p-4 rounded-3xl">
+    <h1 class="m-0 text-3xl font-bold">Remaining</h1>
+    <p class="m-0 text-[#8c8c8c]">This week · ends in 4 days</p>
 
-    <section class="remaining-box">
-      <!-- example of tailwind -->
-      <h2 class="text-3xl">Rp 325.000</h2> 
-      <p class="remaining-detail">of Rp 500.000 · 3 spent</p>
+    <section class="bg-white flex flex-col p-4 rounded-2xl">
+      <h2 class="text-3xl text-green-600 m-0">Rp 325.000</h2>
+      <p class="m-0 text-[#8c8c8c]">of Rp 500.000 · 3 spent</p>
     </section>
 
-    <h2 class="section-label">QUICK LOG</h2>
+    <h2 class="m-0 text-[#8c8c8c] text-[0.9rem] font-bold">QUICK LOG</h2>
 
-    <section class="quick-log-box">
-      <input class="title-input" type="text" placeholder="Title · e.g. Nasi goreng" />
-      <div class="quick-log-categories">
-        <button class="category-pill active" type="button">Food</button>
-        <button class="category-pill" type="button">Housing</button>
-        <button class="category-pill" type="button">Health</button>
+    <section class="bg-white flex flex-col gap-3 p-4 rounded-2xl">
+      <input 
+        class="bg-gray-200 border-none rounded-xl p-3 focus:outline-none" 
+        type="text" 
+        placeholder="Title · e.g. Nasi goreng" 
+      />
+      
+      <div class="flex gap-2">
+        <button 
+          class=" bg-green-600 border-none rounded-full py-2 px-4 bg-[#3e6b5e] text-white cursor-pointer" 
+          type="button"
+        >
+          Food
+        </button>
+        <button 
+          class="  border-none rounded-full py-2 px-4 bg-[#ebebe8] cursor-pointer" 
+          type="button"
+        >
+          Housing
+        </button>
+        <button 
+          class="border-none rounded-full py-2 px-4 bg-[#ebebe8] cursor-pointer" 
+          type="button"
+        >
+          Health
+        </button>
       </div>
-      <div class="quick-log-row">
-        <input class="amount-input" type="text" placeholder="25.000" />
-        <button class="save-button" type="button">Save</button>
+
+      <div class=" bg-gray-200 flex gap-3">
+        <input 
+          class="bg-gray-200 border-none rounded-xl p-3 w-1/2 focus:outline-none" 
+          type="text" 
+          placeholder="25.000" 
+        />
+        <button 
+          class=" bg-green-600  border-none rounded-xl bg-[#3e6b5e] text-white w-1/2 cursor-pointer" 
+          type="button"
+        >
+          Save
+        </button>
       </div>
     </section>
+<div class=""><h2 class="text-base m-auto  font-normal flex self-start text-[0.9rem] font-bold ">RECENT</h2></div>
 
-    <h2 class="section-label">RECENT</h2>
-
-    <section class="recent-list">
-      <div class="recent-item">
-        <p>Nasi goreng · Food</p>
+    <section class="flex flex-col gap-3">
+      <div class="bg-white p-3 rounded-lg flex justify-between">
+        <p class="m-0">Nasi goreng · Food</p>
         <span>25.000</span>
       </div>
-      <div class="recent-item">
-        <p>Bus fare · Transport</p>
+      <div class="bg-white p-3 rounded-lg flex justify-between">
+        <p class="m-0">Bus fare · Transport</p>
         <span>15.000</span>
       </div>
     </section>
   </main>
 </template>
-
-<style scoped>
-.homepage {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: rgb(245, 245, 243);
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 1rem;
-  border-radius: 1.5rem;
-}
-
-.remaining-title {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.remaining-subtitle {
-  margin: 0;
-  color: rgb(140, 140, 140);
-}
-
-.remaining-box {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.remaining-amount {
-  margin: 0;
-  color: rgb(70, 120, 105);
-  font-size: 2.2rem;
-}
-
-.remaining-detail {
-  margin: 0;
-  color: rgb(140, 140, 140);
-}
-
-.section-label {
-  margin: 0;
-  color: rgb(140, 140, 140);
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.quick-log-box {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.title-input {
-  background-color: rgb(245, 245, 243);
-  border: none;
-  border-radius: 0.75rem;
-  padding: 0.75rem;
-}
-
-.quick-log-categories {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.category-pill {
-  border: none;
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
-  background-color: rgb(235, 235, 232);
-}
-
-.category-pill.active {
-  background-color: rgb(62, 107, 94);
-  color: white;
-}
-
-.quick-log-row {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.amount-input {
-  background-color: rgb(245, 245, 243);
-  border: none;
-  border-radius: 0.75rem;
-  padding: 0.75rem;
-  width: 50%;
-}
-
-.save-button {
-  border: none;
-  border-radius: 0.75rem;
-  background-color: rgb(62, 107, 94);
-  color: white;
-  width: 50%;
-}
-
-.recent-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.recent-item {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.75rem 1rem;
-  border-radius: 0.75rem;
-}
-
-.recent-item p {
-  margin: 0;
-}
-</style>

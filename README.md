@@ -106,11 +106,11 @@ So that totals and remaining balance match my pay cadence.
 
 Acceptance Criteria:
 
-- [ ] Given first launch, when I complete setup, then base currency and cycle type are persisted and applied to Home/Budgets.
-- [ ] Given setup, when currency is unset, then Continue is disabled with inline hint.
-- [ ] Given returning launch, when settings exist, then setup is skipped.
-- [ ] Supported currencies (MVP): USD, EUR, IDR, JPY, GBP, SGD, AUD — single-select list.
-
+1. if budget is empty, then create an alert to remind user to set budget
+2. go to budget page
+3. set your budget in the field
+4. click apply budget
+5. you will see updated budget in all pages (budget and home)
 **Priority:** P0 | **Effort:** S
 
 #### US-02: Log expense in 3 steps
